@@ -20,6 +20,7 @@ git clone
 git remote rm <name> # 删除远程库
 git remote -v # 查看远程库信息
 mv mygit <new directory> # 修改本地库名
-git remote add origin <url> # 第一次同步到GitHub
-git branch -M main
-git push -u origin main
+git remote add origin git@github.com:qianranwei/learngit.git # 第一次同步到GitHub
+git push -u origin master # 第一次推送，以后不需要-u
+git config --global --unset http.proxy # 取消http代理
+git config --global --unset https.proxy # 取消https代理
